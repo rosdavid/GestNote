@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device.width, initial-scale=1.0" />
+    <meta name="title" content="GestNote | Effortless Note-Taking" />
+    <title>GestNote | Effortless Note-Taking</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Material Icons -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/app.css" />
+
+    <!-- JavaScript -->
+    <script src="./js/main.js" defer></script>
+    <script type="module" src="./js/app.js" defer></script>
+  </head>
+
+  <body>
+    <header class="sidebar" data-sidebar>
+      <div class="wrapper wrapper-1">
+        <a href="/">
+          <img
+            class="logo-light"
+            src="./assets/img/logo-light.svg"
+            alt="GestNote Logo Light"
+          />
+          <img
+            class="logo-dark"
+            src="./assets/img/logo-dark.svg"
+            alt="GestNote Logo dark"
+          />
+        </a>
+
+        <button
+          class="menu-btn icon-btn large"
+          aria-label="Close Menu"
+          data-sidebar-toggler
+        >
+          <span class="material-symbols-rounded" aria-hidden="true">close</span>
+          <div class="state layer"></div>
+        </button>
+      </div>
+
+      <button class="fab" data-note-create-btn>
+        <span class="material-symbols-rounded" aria-hidden="true">add</span>
+        <span class="text text-label-large">New Note</span>
+        <div class="state-layer"></div>
+      </button>
+    </header>
+  </body>
+</html>
