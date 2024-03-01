@@ -19,7 +19,7 @@ export const UserItem = () => {
       <DropdownMenuTrigger asChild>
         <div
           role="button"
-          className="flex items-center text-sm p-3 w-full hover:bg-primary/5"
+          className="flex items-center text-sm p-3 w-full h-15 bg-black/10 hover:bg-primary/5"
         >
           <div className="gap-x-2 flex items-center max-w-[150px]">
             <Avatar className="h-5 w-5">
@@ -56,7 +56,7 @@ export const UserItem = () => {
           </div>
         </div>
         <DropdownMenuSeparator />
-        <div className="flex justify-evenly gap-x-6 py-2">
+        <div className="flex justify-between gap-x-6 py-2">
           <DropdownMenuItem
             asChild
             className="cursor-pointer text-muted-foreground"
