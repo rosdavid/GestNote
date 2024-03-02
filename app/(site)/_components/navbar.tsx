@@ -18,12 +18,12 @@ const Navbar = () => {
   return (
     <div
       className={cn(
-        "z-50 bg-transparent fixed top-0 flex items-center justify-between w-full p-6 backdrop-blur h-0",
+        "z-50 bg-transparent fixed top-0 flex items-center w-full p-6 backdrop-blur h-0",
         scrolled && "border-b shadow-sm"
       )}
     >
       <Logo />
-      <div className="md:ml-auto md:justify-end justify-between w-full flex items-center gap-x-2">
+      <div className="md:ml-auto justify-end w-full flex items-center gap-x-2">
         {isLoading && <Spinner />}
         {!isAuthenticated && !isLoading && (
           <>

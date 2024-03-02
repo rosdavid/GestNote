@@ -48,7 +48,7 @@ const CardsPrices = () => {
               </div>
             </div>
             <Link
-              href="/agency"
+              href="/"
               className={clsx("w-full text-center bg-primary p-2 rounded-md", {
                 "!bg-muted-foreground": true,
               })}
@@ -89,7 +89,7 @@ const CardsPrices = () => {
               </div>
             </div>
             <Link
-              href="/agency"
+              href="/"
               className={clsx("w-full text-center bg-primary p-2 rounded-md", {
                 "!bg-muted-foreground": true,
               })}
