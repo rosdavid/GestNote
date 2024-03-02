@@ -21,12 +21,12 @@ export const UserItem = () => {
           role="button"
           className="flex items-center text-sm p-3 w-full h-15 bg-black/10 hover:bg-primary/5"
         >
-          <div className="gap-x-2 flex items-center max-w-[150px]">
+          <div className="gap-x-2 flex items-center max-w-[160px]">
             <Avatar className="h-5 w-5">
               <AvatarImage src={user?.imageUrl} />
             </Avatar>
             <span className="text-start font-medium line-clamp-1">
-              {user?.fullName}&apos;s notes
+              {user?.fullName}&apos;s workspace
             </span>
           </div>
           <ChevronsLeftRight className="rotate-90 ml-2 h-4 w-4 text-muted-foreground" />
@@ -50,7 +50,7 @@ export const UserItem = () => {
             </div>
             <div className="space-y-1">
               <p className="text-sm line-clamp-1">
-                {user?.fullName}&apos;s notes
+                {user?.fullName}&apos;s workspace
               </p>
             </div>
           </div>
