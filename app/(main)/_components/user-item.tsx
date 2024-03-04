@@ -63,7 +63,6 @@ export const UserItem = () => {
           >
             <SignOutButton>Logout</SignOutButton>
           </DropdownMenuItem>
-          <ModeToggle />
         </div>
       </DropdownMenuContent>
     </DropdownMenu>

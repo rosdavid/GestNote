@@ -9,6 +9,7 @@ import { ConvexClientProvider } from "@/providers/convex-provider";
 
 // Importing Toaster component from Sonner
 import { Toaster } from "sonner";
+import { ModalProvider } from "@/providers/modal-provider";
 
 // Initializing Inter font
 const inter = Inter({ subsets: ["latin"] });
@@ -57,6 +58,7 @@ export default function RootLayout({
           >
             {/* Toaster component for displaying notifications */}
             <Toaster position="bottom-right" />
+            <ModalProvider />
             {children}
           </ThemeProvider>
         </ConvexClientProvider>
