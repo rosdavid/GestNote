@@ -8,13 +8,13 @@ import {
   LucideIcon,
   MoreHorizontal,
   Plus,
-  Trash,
+  Trash2,
 } from "lucide-react";
 import useDetectOS from "@/hooks/use-detect-os";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { toast } from "sonner";
 import {
   DropdownMenu,
@@ -52,7 +52,7 @@ export const Item = ({
 }: ItemProps) => {
   const { user } = useUser();
   const create = useMutation(api.documents.create);
-  // const router = useRouter();
+  const router = useRouter();
   const archive = useMutation(api.documents.archive);
 
   const onArchive = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
@@ -82,7 +82,7 @@ export const Item = ({
         if (!expanded) {
           onExpand?.();
         }
-        // router.push(`/documents/${documentId}`);
+        router.push(`/documents/${documentId}`);
       }
     );
 
@@ -156,7 +156,7 @@ export const Item = ({
               forceMount
             >
               <DropdownMenuItem onClick={onArchive}>
-                <Trash className="h-4 w-4 mr-2" /> Delete
+                <Trash2 className="h-4 w-4 mr-2" /> Delete
               </DropdownMenuItem>
               <DropdownMenuSeparator />
               <div className="text-xs text-muted-foreground p-2">
