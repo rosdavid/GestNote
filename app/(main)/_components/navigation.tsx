@@ -25,8 +25,8 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { TrashBox } from "./trash-box";
-import { useSearch } from "@/hooks/use-search";
-import { useSettings } from "@/hooks/use-settings";
+import { useSearch } from "@/hooks/search";
+import { useSettings } from "@/hooks/settings";
 import { Navbar } from "./navbar";
 
 export const Navigation = () => {

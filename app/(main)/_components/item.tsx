@@ -10,7 +10,7 @@ import {
   Plus,
   Trash2,
 } from "lucide-react";
-import useDetectOS from "@/hooks/use-detect-os";
+import useDetectOS from "@/hooks/detect-os";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";

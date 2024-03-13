@@ -6,6 +6,7 @@ import "./globals.css"; // Importing global CSS file
 // Importing custom providers
 import { ThemeProvider } from "@/providers/theme-provider";
 import { ConvexClientProvider } from "@/providers/convex-provider";
+import { EdgeStoreProvider } from "@/lib/edgestore";
 
 // Importing Toaster component from Sonner
 import { Toaster } from "sonner";
@@ -48,19 +49,21 @@ export default function RootLayout({
       <body className={inter.className}>
         {/* ConvexClientProvider wrapper for providing Convex client to the application */}
         <ConvexClientProvider>
-          {/* ThemeProvider wrapper for managing and providing theme to the application */}
-          <ThemeProvider
-            attribute="class" // The attribute where theme class will be applied
-            defaultTheme="system" // Default theme for the application
-            enableSystem // Enable system theme preference
-            disableTransitionOnChange // Disable transition animation when theme changes
-            storageKey="gestnote_theme" // Local storage key to store theme preference
-          >
-            {/* Toaster component for displaying notifications */}
-            <Toaster position="bottom-right" />
-            <ModalProvider />
-            {children}
-          </ThemeProvider>
+          <EdgeStoreProvider>
+            {/* ThemeProvider wrapper for managing and providing theme to the application */}
+            <ThemeProvider
+              attribute="class" // The attribute where theme class will be applied
+              defaultTheme="system" // Default theme for the application
+              enableSystem // Enable system theme preference
+              disableTransitionOnChange // Disable transition animation when theme changes
+              storageKey="gestnote_theme" // Local storage key to store theme preference
+            >
+              {/* Toaster component for displaying notifications */}
+              <Toaster position="bottom-right" />
+              <ModalProvider />
+              {children}
+            </ThemeProvider>
+          </EdgeStoreProvider>
         </ConvexClientProvider>
       </body>
     </html>

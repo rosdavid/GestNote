@@ -1,4 +1,4 @@
-import { useSettings } from "@/hooks/use-settings";
+import { useSettings } from "@/hooks/settings";
 import { Dialog, DialogContent, DialogHeader } from "../ui/dialog";
 import { Label } from "../ui/label";
 import { ModeToggle } from "../mode-toggle";

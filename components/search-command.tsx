@@ -2,7 +2,7 @@
 
 // Import necessary modules and hooks for the SearchCommand component
 import { api } from "@/convex/_generated/api";
-import { useSearch } from "@/hooks/use-search";
+import { useSearch } from "@/hooks/search";
 import { useUser } from "@clerk/clerk-react";
 import { useQuery } from "convex/react";
 import { useRouter } from "next/navigation";
